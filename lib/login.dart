@@ -21,7 +21,6 @@ class _LoginScreenState extends State<LoginScreen> {
       await auth.signIn(
           email: _controllerEmail.text, password: _controllerPassword.text);
     } on FirebaseAuthException catch (e) {
-      print(e);
       setState(() {
         switch (e.code) {
           case 'unknown':

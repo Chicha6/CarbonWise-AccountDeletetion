@@ -83,6 +83,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 20),
             Center(
+              child: Text(
+                  'All data associated with this account will be deleted immediately. The data that will be deleted consists of the following:\n1) All consumption entries\n2) All custom foods\n3) Username, email and password',
+                  style: tFlabelStyle),
+            ),
+            const SizedBox(height: 20),
+            Center(
                 child: SizedBox(
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
